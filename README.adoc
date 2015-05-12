@@ -1,0 +1,10 @@
+= SpringBoot WebApp Demo
+
+SpringBoot looks like a nice way to get started.
+This is a trivial webapp created using SpringBoot.
+
+== HowTo
+
+mvn spring-boot:run
+
+then connect to http://localhost:8080/notaservlet
