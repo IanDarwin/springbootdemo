@@ -8,3 +8,12 @@ This is a trivial webapp created using SpringBoot.
 mvn spring-boot:run
 
 then connect to http://localhost:8080/notaservlet
+
+== War Deployment
+
+It seems that you can't have both the instant-deployment convenience of Spring Boot
+AND the security of a full WAR deployment in the same pom file.  You will need to 
+make several changes to deploy as a WAR file. See the section entitled
+"Traditional Deployment"--"Create a deployable war file" in the
+spring-boot reference manual (Section 73.1 in the current snapshot as of
+this writing).
