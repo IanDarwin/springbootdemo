@@ -1,3 +1,9 @@
+<html>
+<head><title>SpringBoot Demo</title></head>
+<body>
 <h1>Spring Boot Demo</h1>
 
-${model.greets}
+${greetings}
+
+</body>
+</html>
