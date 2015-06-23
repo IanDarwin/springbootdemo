@@ -10,7 +10,7 @@ mvn spring-boot:run
 then connect to http://localhost:8000/notaservlet
 
 Note that is 8000 not the usual 8080 to avoid conflicts.
-Chante this in application.properties if you don't like it.
+Change this in application.properties if you don't like it.
 
 == War Deployment
 
