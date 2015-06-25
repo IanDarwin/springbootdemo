@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class NotAServlet {
 
 	@RequestMapping(value="/notaservlet", method=RequestMethod.GET)
-	public String doWork(@RequestParam("name") String name, ModelMap model) {
-		System.out.println("NotAServlet.doWork()");
+	public String doHardWork(@RequestParam("name") String name, ModelMap model) {
+		System.out.println("NotAServlet.doHardWork()");
 		model.addAttribute("greetings", String.format("<b>Hello %s!!</b>", name));
 		return "hello";
 	}
