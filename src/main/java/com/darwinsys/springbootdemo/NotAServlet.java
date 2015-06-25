@@ -12,7 +12,7 @@ public class NotAServlet {
 	@RequestMapping(value="/notaservlet", method=RequestMethod.GET)
 	public String doWork(@RequestParam("name") String name, ModelMap model) {
 		System.out.println("NotAServlet.doWork()");
-		model.addAttribute("greetings", String.format("<h1>Hello %s!!</h1>", name));
+		model.addAttribute("greetings", String.format("<b>Hello %s!!</b>", name));
 		return "hello";
 	}
 }
