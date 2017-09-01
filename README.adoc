@@ -13,7 +13,7 @@ right-click Application.java, then RunAs->Spring Boot Application
 
 then connect to 
 
-	http://localhost:8000/
+http://localhost:8000/
 
 Note: that is port 8000, _not_ the usual 8080 to avoid conflicts.
 Change this in application.properties if you don't like it.
