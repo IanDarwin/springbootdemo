@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller()
 public class NotAServlet {
 
-	@RequestMapping(value="/notaservlet", method=RequestMethod.GET)
+	@RequestMapping(value="/notaservlet", method=RequestMethod.POST)
 	public String doHardWork(@RequestParam("name") String name, ModelMap model) {
 		System.out.println("NotAServlet.doHardWork()");
 		model.addAttribute("greetings", String.format("<b>Hello %s!!</b>", name));
