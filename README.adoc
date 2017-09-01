@@ -6,16 +6,16 @@ This is a trivial webapp created using SpringBoot.
 
 == HowTo
 
-mvn spring-boot:run
+	mvn spring-boot:run
 
 Or, in Eclipse with Spring plugin (or "Spring Tool Suite"), 
 right-click Application.java, then RunAs->Spring Boot Application
 
 then connect to 
 
-http://localhost:8000/
+	http://localhost:8000/
 
-Note that is 8000 not the usual 8080 to avoid conflicts.
+Note: that is port 8000, _not_ the usual 8080 to avoid conflicts.
 Change this in application.properties if you don't like it.
 
 Fill in the form and click Submit.
