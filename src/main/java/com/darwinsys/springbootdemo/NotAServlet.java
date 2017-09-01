@@ -15,7 +15,8 @@ public class NotAServlet {
 	@RequestMapping(value="/notaservlet", method=RequestMethod.POST)
 	public String doHardWork(@RequestParam("name") String name, ModelMap model) {
 		System.out.println("NotAServlet.doHardWork()");
-		model.addAttribute("greetings", String.format("<b>Hello %s!!</b>", name));
+		final String greeting = String.format("<b>Hello %s!!</b>", name);
+		model.addAttribute("greetings", greeting);
 		return "hello";
 	}
 }
