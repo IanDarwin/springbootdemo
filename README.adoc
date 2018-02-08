@@ -23,11 +23,11 @@ Fill in the form and click Submit.
 
 == War Packaging for EE App Server Deployment
 
-See the section entitled "Traditional Deployment"--"Create a deployable war file" in
+This version has the modifications described in
+the section entitled "Traditional Deployment"--"Create a deployable war file" in
 the spring-boot reference manual (Section 85.1 as of
 this writing).
-I've already added the "extends SpringBootServletInitializer" code
-and changed the packaging to "war" - it still works in Maven and Eclipse with these settings -
-but you must change the embedded container to "provided" in _pom.xml_ before packaging,
-otherwise you will probably get class-loading conflicts.
-
+it still works in Maven and Eclipse with these settings,
+and the packaged was file has a jboss-web.xml config file
+so it deploys as /springbootdemos when you simply copy the war file to
+WILDFLYHOME/standalone/deployments.
