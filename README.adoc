@@ -27,6 +27,7 @@ See the section entitled "Traditional Deployment"--"Create a deployable war file
 the spring-boot reference manual (Section 85.1 as of
 this writing).
 I've already added the "extends SpringBootServletInitializer" code
-and changed the packaging to "war" - it still works in eclipse with these settings -
-but you must change the embedded container to "provided".
+and changed the packaging to "war" - it still works in Maven and Eclipse with these settings -
+but you must change the embedded container to "provided" in _pom.xml_ before packaging,
+otherwise you will probably get class-loading conflicts.
 
