@@ -16,7 +16,7 @@ Seconds later, connect to
 
 http://localhost:8000/
 
-Note: that is port 8000, _not_ the usual 8080 to avoid conflicts.
+Note: that is port 8000, _not_ the usual 8080, to avoid conflicts.
 Change this in application.properties if you don't like it.
 
 Fill in the form and click Submit.
@@ -25,7 +25,11 @@ Fill in the form and click Submit.
 
 It seems that you can't have both the instant-deployment convenience of
 Spring Boot AND the security of a full WAR deployment in the same POM file.
-You will need to make several changes to deploy as a WAR file. See the
+If you try deploying this as a war on Wildfly, for example, you get:
+
+	java.lang.NoSuchMethodError: org.apache.tomcat.util.descriptor.DigesterFactory.newDigester(ZZLorg/apache/tomcat/util/digester/RuleSet;Z)Lorg/apache/tomcat/util/digester/Digester
+
+You may need to make some changes to deploy as a WAR file. See the
 section entitled "Traditional Deployment"--"Create a deployable war file" in
 the spring-boot reference manual (Section 73.1 in the current snapshot as of
 this writing).
