@@ -10,13 +10,14 @@ import org.springframework.web.bind.annotation.RequestParam;
  * It's not a Servlet, it's a Spring MVC Controller
  */
 @Controller()
+@RequestMapping(value="/welcome")
 public class WelcomeController {
 
-	@RequestMapping(value="/welcome", method=RequestMethod.POST)
+	@RequestMapping(method=RequestMethod.POST)
 	public String doHardWork(@RequestParam("name") String name, ModelMap model) {
-		System.out.println("WelcomeController.doHardWork()");
+		System.out.printf("WelcomeController.doHardWork(%s)\n", name);
 		final String greeting = String.format("<b>Hello %s!!</b>", name);
 		model.addAttribute("greetings", greeting);
-		return "hello";
+		return "/hello.jsp";
 	}
 }
