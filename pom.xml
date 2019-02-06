@@ -16,6 +16,23 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
+		<!-- Two deps on Tomcat, both must be scope runtime for Eclipse/Maven, and
+			*** both must be scope provided for war deployment.
+			-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<!-- The Embedded Tomcat project (invented by some of the Tomcat committers a few years ago)
+			*** is actually pretty minimal, so you have to add the JSP compiler (JaSPer) back in:
+			-->
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 
 </project>
