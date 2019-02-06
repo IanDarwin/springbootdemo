@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
- * It's not a Servlet, it's a Controller
+ * It's not a Servlet, it's a Spring MVC Controller
  */
 @Controller()
 public class WelcomeController {
