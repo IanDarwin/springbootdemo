@@ -27,7 +27,7 @@ This version has the modifications described in
 the section entitled "Traditional Deployment"--"Create a deployable war file" in
 the spring-boot reference manual (Section 85.1 as of
 this writing).
-it still works in Maven (`mvn package`) and can be run in Eclipse with these settings.
+It still works in Maven (`mvn package`) and can be run in Eclipse with these settings.
 For WildFly users, the packaged _war_ file has a jboss-web.xml config file
 so it deploys as _/springbootdemos_ when you simply copy the _war_ file to
 WILDFLYHOME/standalone/deployments.
